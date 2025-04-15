@@ -38,8 +38,48 @@ header{
   margin-top: 20px;
 }
 
+/* footer{
+  width: 55%;
+  margin-left: 25%; 
+}
+
 .footer-layout{
   display: grid;
   grid-template-columns: 50% 50%;
+  place-items: center;
+  
+}
+.footer-content:nth-child(2){
+}
 
+.footer-content p{
+  margin-top: 10px;
+} */
+
+footer {
+  width: 100%;
+  /* background-color: #f6f6f6; */
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 800px;
+  width: 90%;
+  gap: 40px;
+}
+
+.footer-content h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.footer-content p {
+  color: #666;
+  line-height: 1.5;
+  font-size: 0.95rem;
 }
