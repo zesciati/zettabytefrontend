@@ -26,6 +26,7 @@ header{
   align-items: center;
   background-color: #282F5C;
   height: 50vh;
+  /* position: relative; */
 }
 
 .header-content{
@@ -38,17 +39,31 @@ header{
   margin-top: 20px;
 }
 
-card{
-  position: absolute;
+header section{
+  display: flex;
+}
+.card{
+  position: relative;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 40%;
+  width: 250px;
+  height: 290px;
+  /* border-radius: 5px; */
+  background-color:whitesmoke;
+  top: 40px;
+}
+.judul-kartu{
+  background-color:#666;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: white;
 }
 
 article{
   display: flex;
   justify-content: center;
-  padding: 40px 0px;
+  padding: 250px 0px 40px 0px;
   
 }
 
