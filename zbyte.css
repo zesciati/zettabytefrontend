@@ -52,12 +52,16 @@ header section {
 .card {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  transition: transform 0.3s;
   width: 250px;
   height: 310px;
   background-color: whitesmoke;
   top: 40px;
 
+}
+
+.card:hover {
+  transform: scale(1.5);
 }
 
 .judul-kartu {
@@ -125,6 +129,7 @@ footer {
 }
 
 /* parent */
+/* https://www.youtube.com/shorts/pwkzADqzaK4?feature=share */
 .footer-layout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
