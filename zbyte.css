@@ -1,15 +1,20 @@
 html {
   box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
-body{
+
+body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-body::before{
+
+body::before {
   content: '';
   position: fixed;
   top: 0;
@@ -20,7 +25,7 @@ body::before{
   background: #F5F5F5;
 }
 
-header{
+header {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -29,47 +34,86 @@ header{
   /* position: relative; */
 }
 
-.header-content{
+.header-content {
   margin-top: 80px;
   text-align: center;
-  color:white
-
+  color: white
 }
-.header-content p{
+
+.header-content p {
   margin-top: 20px;
 }
 
-header section{
+header section {
   display: flex;
+  gap: 10px;
 }
-.card{
+
+.card {
   position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 250px;
-  height: 290px;
-  /* border-radius: 5px; */
-  background-color:whitesmoke;
+  height: 310px;
+  background-color: whitesmoke;
   top: 40px;
+
 }
-.judul-kartu{
-  background-color:#666;
+
+.judul-kartu {
+  background-color: #3C4252;
   height: 40px;
   padding-left: 10px;
   padding-top: 10px;
   color: white;
 }
 
-article{
+section .dollar {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  /* align-items: ; */
+
+}
+
+.no {
+  font-size: 80px;
+}
+
+section .descr {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.descr span {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+section .button {
+  margin-top: 10%;
+  margin-left: 27%;
+  width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #039BE5;
+  color: white;
+}
+
+section .button:focus {
+  background-color: #B8CFCE;
+}
+
+article {
   display: flex;
   justify-content: center;
   padding: 250px 0px 40px 0px;
-  
+
 }
 
-article h2{
+article h2 {
   color: #666;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -81,7 +125,7 @@ footer {
 }
 
 /* parent */
-.footer-layout { 
+.footer-layout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   max-width: 800px;
