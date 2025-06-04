@@ -21,7 +21,8 @@
     <section>
       <div class="card">
         <div class="judul-kartu">
-          <h5>BASIC</h5>
+
+          <h5 class="nama-kartu" id="kartuan"></h5>
         </div>
         <div class="dollar">$ <span class="no">4</span> / month</div>
         <hr style="width: 70%; margin-left: 30px;">
@@ -33,7 +34,7 @@
 
       <div class="card">
         <div class="judul-kartu">
-          <h5>BASIC</h5>
+          <h5 class="nama-kartu1"></h5>
         </div>
         <div class="dollar">$ <span class="no">4</span> / month</div>
         <hr style="width: 70%; margin-left: 30px;">
@@ -45,7 +46,7 @@
 
       <div class="card">
         <div class="judul-kartu">
-          <h5>BASIC</h5>
+          <h5 class="nama-kartu2"></h5>
         </div>
         <div class="dollar">$ <span class="no">4</span> / month</div>
         <hr style="width: 70%; margin-left: 30px;">
@@ -85,6 +86,39 @@
   </footer>
 
   <script>
+
+
+    main();
+
+    async function main() {
+      const judulCard = await getData();
+
+      const jc = document.querySelector('.nama-kartu');
+      const jc1 = document.querySelector('.nama-kartu1');
+      const jc2 = document.querySelector('.nama-kartu2');
+
+      console.log(judulCard);
+      // console.log(jc);
+      // console.log(jc1);
+      // console.log(jc2);
+
+
+      for (const titlecard of judulCard) {
+        jc.innerHTML += `${titlecard.judulcard[0]}`;
+        jc1.innerHTML += `${titlecard.judulcard[1]}`;
+        jc2.innerHTML += `${titlecard.judulcard[2]}`;
+
+      }
+    }
+
+    async function getData() {
+      const res = await fetch("./data.json");
+      const data = await res.json();
+
+      return data;
+    }
+
+
     function buybtn() {
       alert("Success");
     }
