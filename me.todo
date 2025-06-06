@@ -4,4 +4,9 @@
 ☐ ini adalah branch main
 Archive:
 ☐ ini adalah branch feature/warna v1
+<<<<<<< HEAD
 Archive:
+=======
+☐ Ulang lagi belum ngerti cara git pull
+Archive:
+>>>>>>> d2ed6e58cee21d5341d65fb6cb33b391902fddb9
