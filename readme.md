@@ -1,1 +1,1 @@
-Link -> zettabyte-internship-zaky.zakyabiyyu.xyz
+Link -> https://zettabyte-internship-zaky.zakyabiyyu.xyz/
